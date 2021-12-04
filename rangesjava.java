@@ -19,8 +19,9 @@ public class rangesjava{
         byte thisByte = -38;
         short thisShort = 8403;
         int thisInt = 2304320;
-        long thisLong = (long) (50000 + 10 * ((int)(thisByte) + (int)(thisShort) + thisInt));
+        long thisLong = 50000L + 10L * (thisByte + thisShort + thisInt);
         System.out.println("Long result = " + thisLong);
-        
+        System.out.println();
+
     }
 }
