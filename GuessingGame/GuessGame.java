@@ -1,9 +1,13 @@
+package GuessingGame;
+
 public class GuessGame {
+    // three instance variables
     Player p1;
     Player p2;
     Player p3;
 
     public void startGame() {
+        // creates three Player objects and assigns them to the three Player instance variables
         p1 = new Player();
         p2 = new Player();
         p3 = new Player();
