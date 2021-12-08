@@ -1,13 +1,14 @@
+package HackerRank;
+
 import java.util.*;
-import java.io.*;
 
 class Solution {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         // the same as BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         
-        int t = s.nextInt();
-
+        int t = sc.nextInt();
+        
         for(int i = 0; i < t; i++) {
             try {
                 long x = sc.nextLong();
@@ -17,10 +18,11 @@ class Solution {
                 if(x >= -2147483648 && x <= 2147483647)System.out.println("* int");
                 if(x >= -9223372036854775808L && x <= 9223372036854775807L)System.out.println("* long");
             }
-            catch(Execption e) {
+            catch(Exception e) {
                 System.out.println(sc.next() + " can't be fitted anywhere.");
             }
         }
-
+        
+        sc.close();
     }
 }
