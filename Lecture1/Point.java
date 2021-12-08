@@ -1,3 +1,5 @@
+package Lecture1;
+
 class Point { 
     // instance variables (attributes)
     private double x;
@@ -30,6 +32,6 @@ class Point {
     }
 
     public String toString() {
-        return "(" + this.x + ", " + this.y + ")";
+        return "(" + String.format("%.3f", this.x) + ", " + String.format("%.3f", this.y) + ")";
     }
 }
