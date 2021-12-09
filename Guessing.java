@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 class Guessing {
-    public static void main(String[] args) {
+    public static boolean mainGame() {
         int guess = (int) (Math.random() * 10) + 1;
         int numGuesses = 0;
         boolean hit = false;
@@ -13,6 +13,7 @@ class Guessing {
                 break;
             }
             else {
+                System.out.println("Guess no: " + (numGuesses + 1));
                 System.out.print("Please enter an integer from 1-10: ");
                 int userGuess = sc.nextInt();
 
@@ -33,9 +34,30 @@ class Guessing {
         }
 
         sc.close();
-        
-        System.out.println("You made a right guess in " + numGuesses + " moves.");
-        System.out.println("Congratulations!");
+        return hit;
+    }
 
+    public static void main(String[] args) {
+        // need to make the initial game
+        mainGame();
+
+        while(true) {
+            Scanner mainScan = new Scanner(System.in);
+            int newGame = 0;
+            System.out.print("Do you want to play again? (1 for yes, 0 for no): ");
+            newGame = mainScan.nextInt();
+            mainScan.close();
+
+            if(newGame == 0) {
+                System.out.println("Thank you for playing!");
+                break;
+            }
+            else if(newGame == 1) {
+                mainGame();
+            }
+            else {
+                System.out.println("Invalid input. Please enter another number.");
+            }
+        }
     }
 }
