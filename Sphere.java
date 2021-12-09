@@ -7,7 +7,7 @@ class Sphere {
 		System.out.print("Enter diameter: ");
 		double d = sc.nextDouble();
 		sc.close();
-        
+
 		double radius = d/2;
 		double volume = (4/3)*Math.PI*Math.pow(radius, 3);
 		double area = 4*Math.PI*Math.pow(radius, 2);
