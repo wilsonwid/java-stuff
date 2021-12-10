@@ -46,11 +46,16 @@ class ReverselyPrint {
             j--;
         }
 
+        /*
         int i = 0;
         while(i < reversedArr.length) {
             System.out.print(reversedArr[i] + " ");
             i++;
         }
         System.out.println();
+
+        */
+
+        System.out.println(Arrays.toString(reversedArr));
     }
 }
