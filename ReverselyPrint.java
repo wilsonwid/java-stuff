@@ -12,7 +12,7 @@ class ReverselyPrint {
         int numInt = sc.nextInt();
         int[] values = new int[numInt];
         System.out.print("Enter the " + numInt + " integers: ");
-        for(int i = 0; i < numInt; i++) {
+        for(int i = 0; i < numInt; i++) {   
             values[i] = sc.nextInt();
         }
         sc.close();
