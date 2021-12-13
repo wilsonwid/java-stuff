@@ -20,4 +20,9 @@ class Circle {
     double getPerimeter() {
         return 2 * Math.PI * this.getRadius();
     }
+
+    // toString() method
+    public String toString() {
+        return "area " + String.format("%.2f", this.getArea()) + ", perimeter " + String.format("%.2f", this.getPerimeter());
+    }
 }
