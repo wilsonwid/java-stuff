@@ -1,2 +1,2 @@
 # java-stuff
-My repository for learning Java. Feel free to fork and/or suggest changes :)
+My **public** repository for learning Java. Feel free to fork and/or suggest changes, or hit me up to learn Java together! :)
